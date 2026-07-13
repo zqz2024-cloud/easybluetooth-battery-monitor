@@ -93,15 +93,18 @@ function getLocalIP() {
 }
 
 server.listen(PROXY_PORT, '0.0.0.0', () => {
-  const localIP = getLocalIP();
   console.log('═══════════════════════════════════════');
   console.log('  蓝牙设备电量监控面板');
   console.log('═══════════════════════════════════════');
   console.log(`  本机访问  : http://127.0.0.1:${PROXY_PORT}`);
-  console.log(`  手机访问  : http://${localIP}:${PROXY_PORT}`);
+  console.log(`  手机访问  : http://192.168.1.21:${PROXY_PORT}`);
   console.log('═══════════════════════════════════════');
   console.log('  请确保:');
   console.log('  1. EasyBluetooth 已开启统一标准数据接口');
   console.log('  2. 手机与电脑处于同一局域网');
+  console.log('  3. 手机打开下方链接并点⚙️保存即可自动连接');
+  console.log('═══════════════════════════════════════');
+  console.log('  GitHub Pages 一键直达:');
+  console.log('  https://zqz2024-cloud.github.io/easybluetooth-battery-monitor/?api=http://192.168.1.21:3000');
   console.log('═══════════════════════════════════════');
 });
