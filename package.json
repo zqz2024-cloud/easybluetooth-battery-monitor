@@ -1,0 +1,8 @@
+{
+  "name": "easybluetooth-battery-monitor",
+  "version": "1.0.0",
+  "description": "手机端查看蓝牙设备电量",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
